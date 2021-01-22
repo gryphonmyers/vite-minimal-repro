@@ -9,3 +9,8 @@ export default {
   }
 }
 </script>
+<style>
+  .main-component {
+    font-weight: bold;
+  }
+</style>
