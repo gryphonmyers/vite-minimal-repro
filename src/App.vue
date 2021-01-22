@@ -1,6 +1,11 @@
 <template>
-  <div>foo</div>
+  <main-component /> 
 </template>
-<style>
-@import "./assets/css/my-styles.css";
-</style>
+<script>
+import { defineAsyncComponent } from 'vue'
+export default {
+  components: {
+    MainComponent: defineAsyncComponent(() => import('./components/main.vue'))
+  }
+}
+</script>

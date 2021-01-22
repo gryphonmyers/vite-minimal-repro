@@ -5,7 +5,10 @@ import vue from '@vitejs/plugin-vue'
  */
 export default {
   build: {
-    cssCodeSplit: false
+    manifest: true,
+    rollupOptions: {
+      input: "/src/main.js"
+    }
   },
   plugins: [vue()]
 }
