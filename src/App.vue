@@ -1,6 +1,21 @@
 <template>
-  <div>foo</div>
+  <div class="app">
+    <router-view v-slot="{ Component }">
+      <keep-alive>
+        <component :is="Component" />
+      </keep-alive>
+    </router-view>
+  </div>
 </template>
+
+<script>
+export default {
+
+}
+</script>
+
 <style>
-@import "./assets/css/my-styles.css";
+.app {
+  font-size: 20px;
+}
 </style>
